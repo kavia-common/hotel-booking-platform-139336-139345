@@ -1,0 +1,29 @@
+[
+  {
+    "id": "h1",
+    "name": "Oceanview Resort",
+    "city": "San Diego",
+    "rating": 4.5,
+    "pricePerNight": 189,
+    "amenities": ["Pool", "Wi-Fi", "Breakfast", "Parking"],
+    "description": "Relax with stunning ocean views and modern amenities near the beach."
+  },
+  {
+    "id": "h2",
+    "name": "Cityscape Hotel",
+    "city": "New York",
+    "rating": 4.2,
+    "pricePerNight": 239,
+    "amenities": ["Gym", "Wi-Fi", "Bar", "Pet Friendly"],
+    "description": "Stay in the heart of the city with easy access to landmarks and dining."
+  },
+  {
+    "id": "h3",
+    "name": "Lakeside Inn",
+    "city": "Chicago",
+    "rating": 4.0,
+    "pricePerNight": 149,
+    "amenities": ["Wi-Fi", "Breakfast", "Parking"],
+    "description": "Cozy and comfortable inn with serene lakeside views."
+  }
+]
