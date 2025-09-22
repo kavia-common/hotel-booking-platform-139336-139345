@@ -111,8 +111,54 @@ function App() {
       <main className="container page" role="main" aria-live="polite">
         {view === 'home' && (
           <>
-            <h1 className="page-title">Find your next stay</h1>
-            <div className="page-subtitle">Explore hotels with our Ocean Professional design.</div>
+            {/* Hero image adhering to theme aesthetics */}
+            <div
+              className="card"
+              style={{
+                overflow: 'hidden',
+                borderRadius: '16px',
+                boxShadow: 'var(--shadow-md)',
+                border: '1px solid var(--color-border)',
+                marginBottom: 16
+              }}
+              aria-label="Featured hero image"
+            >
+              <div style={{ position: 'relative' }}>
+                <img
+                  src="/assets/20250922_121848_istockphoto-840270072-1024x1024.jpg"
+                  alt="Elegant hotel environment welcoming guests"
+                  style={{ width: '100%', height: 260, objectFit: 'cover', display: 'block' }}
+                />
+                <div
+                  style={{
+                    position: 'absolute',
+                    inset: 0,
+                    background:
+                      'linear-gradient(180deg, rgba(0,0,0,0.0), rgba(0,0,0,0.45))'
+                  }}
+                  aria-hidden="true"
+                />
+                <div
+                  style={{
+                    position: 'absolute',
+                    left: 16,
+                    bottom: 14,
+                    color: 'white',
+                    textShadow: '0 2px 8px rgba(0,0,0,0.45)'
+                  }}
+                >
+                  <div className="helper" style={{ color: 'rgba(255,255,255,0.9)' }}>
+                    Ocean Professional
+                  </div>
+                  <h1 className="page-title" style={{ margin: 0, color: 'white' }}>
+                    Find your next stay
+                  </h1>
+                  <div className="helper" style={{ color: 'rgba(255,255,255,0.9)', marginTop: 2 }}>
+                    Explore hotels with our Ocean Professional design.
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <div className="layout-grid">
               <FilterBar

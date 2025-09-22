@@ -219,6 +219,14 @@ a:hover { text-decoration: underline; }
   margin-bottom: 20px;
 }
 
+/* Provide a small gutter for cards preceding content on narrow screens */
+@media (max-width: 979px) {
+  .page .card {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 /* Two-column responsive layout for filters + content */
 .layout-grid {
   display: grid;
