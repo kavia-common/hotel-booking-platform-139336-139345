@@ -219,6 +219,127 @@ a:hover { text-decoration: underline; }
   margin-bottom: 20px;
 }
 
+/* Two-column responsive layout for filters + content */
+.layout-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+@media (min-width: 980px) {
+  .layout-grid {
+    grid-template-columns: 300px 1fr;
+    align-items: start;
+  }
+}
+.layout-sidebar {
+  position: sticky;
+  top: 84px; /* header height + spacing */
+  align-self: start;
+}
+.layout-content {}
+
+/* FilterBar styling */
+.filterbar {
+  padding: 14px;
+}
+.filterbar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.filterbar-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 800;
+}
+.filterbar-reset {
+  padding: 6px 10px;
+  font-weight: 700;
+}
+.filter-group {
+  padding: 10px 0;
+  border-top: 1px dashed var(--color-border);
+}
+.filter-group:first-of-type {
+  border-top: none;
+  padding-top: 2px;
+}
+.filter-group-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.input-with-icon {
+  position: relative;
+}
+.input-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: var(--color-muted);
+}
+.input-with-icon .input {
+  padding-left: 32px;
+}
+
+/* Range input */
+.range {
+  width: 100%;
+  appearance: none;
+  height: 6px;
+  border-radius: 999px;
+  background: #e6eefc;
+  outline: none;
+  margin: 6px 0 2px;
+}
+.range::-webkit-slider-thumb {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  border: 2px solid white;
+  box-shadow: 0 0 0 2px rgba(37,99,235,0.35);
+  cursor: pointer;
+}
+.range::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  border: 2px solid white;
+  box-shadow: 0 0 0 2px rgba(37,99,235,0.35);
+  cursor: pointer;
+}
+
+/* Checkbox grid */
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 8px 12px;
+}
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+.checkbox input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  accent-color: var(--color-primary);
+}
+.checkbox-label {
+  font-size: 13px;
+}
+
 /* Hotel list */
 .hotel-list {
   display: grid;
