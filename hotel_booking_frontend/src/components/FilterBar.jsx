@@ -109,7 +109,7 @@ export default function FilterBar({
   };
 
   return (
-    <aside className={`filterbar card ${className}`} aria-label="Search and filter hotels">
+    <aside id="filters" className={`filterbar card ${className}`} aria-label="Search and filter hotels">
       <div className="filterbar-header">
         <h2 className="filterbar-title">Search & Filters</h2>
         <button className="btn btn-ghost filterbar-reset" onClick={resetFilters} aria-label="Reset all filters">

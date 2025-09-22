@@ -111,54 +111,125 @@ function App() {
       <main className="container page" role="main" aria-live="polite">
         {view === 'home' && (
           <>
-            {/* Hero image adhering to theme aesthetics */}
-            <div
+            {/* Intro + Hero section */}
+            <section
               className="card"
               style={{
                 overflow: 'hidden',
                 borderRadius: '16px',
                 boxShadow: 'var(--shadow-md)',
                 border: '1px solid var(--color-border)',
-                marginBottom: 16
+                marginBottom: 16,
+                padding: 0
               }}
-              aria-label="Featured hero image"
+              aria-label="Welcome to Ocean Professional Hotel Booking"
             >
-              <div style={{ position: 'relative' }}>
-                <img
-                  src="/assets/20250922_121848_istockphoto-840270072-1024x1024.jpg"
-                  alt="Elegant hotel environment welcoming guests"
-                  style={{ width: '100%', height: 260, objectFit: 'cover', display: 'block' }}
-                />
+              <div
+                style={{
+                  display: 'grid',
+                  gridTemplateColumns: '1fr',
+                  gap: 0
+                }}
+              >
+                {/* Intro copy block */}
                 <div
                   style={{
-                    position: 'absolute',
-                    inset: 0,
-                    background:
-                      'linear-gradient(180deg, rgba(0,0,0,0.0), rgba(0,0,0,0.45))'
-                  }}
-                  aria-hidden="true"
-                />
-                <div
-                  style={{
-                    position: 'absolute',
-                    left: 16,
-                    bottom: 14,
-                    color: 'white',
-                    textShadow: '0 2px 8px rgba(0,0,0,0.45)'
+                    padding: 16,
+                    background: 'linear-gradient(135deg, rgba(37,99,235,0.06), rgba(255,255,255,1))'
                   }}
                 >
-                  <div className="helper" style={{ color: 'rgba(255,255,255,0.9)' }}>
-                    Ocean Professional
-                  </div>
-                  <h1 className="page-title" style={{ margin: 0, color: 'white' }}>
-                    Find your next stay
+                  <div className="helper">Welcome</div>
+                  <h1 className="page-title" style={{ marginTop: 2, marginBottom: 6 }}>
+                    Your gateway to great stays
                   </h1>
-                  <div className="helper" style={{ color: 'rgba(255,255,255,0.9)', marginTop: 2 }}>
-                    Explore hotels with our Ocean Professional design.
+                  <div className="page-subtitle" style={{ marginBottom: 12 }}>
+                    Browse hand-picked hotels, compare amenities, and book instantly — all with data
+                    stored locally for a fast, private experience.
+                  </div>
+
+                  {/* Feature highlights */}
+                  <div
+                    style={{
+                      display: 'grid',
+                      gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+                      gap: 10,
+                      marginBottom: 12
+                    }}
+                    aria-label="Key features"
+                  >
+                    <div className="card" style={{ padding: 12 }}>
+                      <div style={{ fontWeight: 700, marginBottom: 4 }}>Browse & filter</div>
+                      <div className="helper">
+                        Search by name or city, set price limits, pick ratings, and require amenities.
+                      </div>
+                    </div>
+                    <div className="card" style={{ padding: 12 }}>
+                      <div style={{ fontWeight: 700, marginBottom: 4 }}>See details</div>
+                      <div className="helper">
+                        Each hotel has a dedicated details view with ratings, amenities, and pricing.
+                      </div>
+                    </div>
+                    <div className="card" style={{ padding: 12 }}>
+                      <div style={{ fontWeight: 700, marginBottom: 4 }}>Book instantly</div>
+                      <div className="helper">
+                        Fill a simple form — bookings are saved to your browser with no sign‑in.
+                      </div>
+                    </div>
+                    <div className="card" style={{ padding: 12 }}>
+                      <div style={{ fontWeight: 700, marginBottom: 4 }}>Local & private</div>
+                      <div className="helper">
+                        Data persists via localStorage; nothing leaves your device.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
+                    <a href="#hotel-list" className="btn" onClick={(e) => { e.preventDefault(); document.getElementById('hotel-list')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }}>
+                      Start Booking Now
+                    </a>
+                    <a href="#filters" className="btn btn-ghost" onClick={(e) => { e.preventDefault(); document.getElementById('filters')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }}>
+                      Adjust Filters
+                    </a>
+                  </div>
+                </div>
+
+                {/* Hero image adhering to theme aesthetics */}
+                <div style={{ position: 'relative' }}>
+                  <img
+                    src="/assets/20250922_121848_istockphoto-840270072-1024x1024.jpg"
+                    alt="Elegant hotel environment welcoming guests"
+                    style={{ width: '100%', height: 260, objectFit: 'cover', display: 'block' }}
+                  />
+                  <div
+                    style={{
+                      position: 'absolute',
+                      inset: 0,
+                      background: 'linear-gradient(180deg, rgba(0,0,0,0.0), rgba(0,0,0,0.45))'
+                    }}
+                    aria-hidden="true"
+                  />
+                  <div
+                    style={{
+                      position: 'absolute',
+                      left: 16,
+                      bottom: 14,
+                      color: 'white',
+                      textShadow: '0 2px 8px rgba(0,0,0,0.45)'
+                    }}
+                  >
+                    <div className="helper" style={{ color: 'rgba(255,255,255,0.9)' }}>
+                      Ocean Professional
+                    </div>
+                    <div className="page-title" style={{ margin: 0, color: 'white', fontSize: 20 }}>
+                      Find your next stay
+                    </div>
+                    <div className="helper" style={{ color: 'rgba(255,255,255,0.9)', marginTop: 2 }}>
+                      Explore hotels with our Ocean Professional design.
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </section>
 
             <div className="layout-grid">
               <FilterBar

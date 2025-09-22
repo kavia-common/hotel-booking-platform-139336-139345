@@ -35,6 +35,7 @@ export default function HotelList({ hotels = [], onSelect }) {
 
   return (
     <section
+      id="hotel-list"
       className="hotel-list"
       aria-label="Available hotels"
       role="list"
