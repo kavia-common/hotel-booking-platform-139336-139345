@@ -5,8 +5,10 @@
     "city": "San Diego",
     "rating": 4.5,
     "pricePerNight": 189,
-    "amenities": ["Pool", "Wi-Fi", "Breakfast", "Parking"],
-    "description": "Relax with stunning ocean views and modern amenities near the beach."
+    "amenities": ["Pool", "Wi‑Fi", "Breakfast", "Parking", "Spa"],
+    "description": "Relax with stunning ocean views and modern amenities near the beach.",
+    "image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=1200&auto=format&fit=crop",
+    "imageAlt": "Oceanview resort with pool and palm trees"
   },
   {
     "id": "h2",
@@ -14,8 +16,10 @@
     "city": "New York",
     "rating": 4.2,
     "pricePerNight": 239,
-    "amenities": ["Gym", "Wi-Fi", "Bar", "Pet Friendly"],
-    "description": "Stay in the heart of the city with easy access to landmarks and dining."
+    "amenities": ["Gym", "Wi‑Fi", "Bar", "Pet Friendly", "Room Service"],
+    "description": "Stay in the heart of the city with easy access to landmarks and dining.",
+    "image": "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a?q=80&w=1200&auto=format&fit=crop",
+    "imageAlt": "Modern hotel room with city skyline views"
   },
   {
     "id": "h3",
@@ -23,7 +27,42 @@
     "city": "Chicago",
     "rating": 4.0,
     "pricePerNight": 149,
-    "amenities": ["Wi-Fi", "Breakfast", "Parking"],
-    "description": "Cozy and comfortable inn with serene lakeside views."
+    "amenities": ["Wi‑Fi", "Breakfast", "Parking"],
+    "description": "Cozy and comfortable inn with serene lakeside views.",
+    "image": "https://images.unsplash.com/photo-1566665797739-1674de7a421a?q=80&w=1200&auto=format&fit=crop",
+    "imageAlt": "Inn near a calm lake at sunset"
+  },
+  {
+    "id": "h4",
+    "name": "Harbor Lights Boutique",
+    "city": "Seattle",
+    "rating": 4.7,
+    "pricePerNight": 212,
+    "amenities": ["Wi‑Fi", "Breakfast", "Parking", "Bar", "Coffee Shop"],
+    "description": "Boutique comfort near the harbor with artisanal breakfast and cozy lounges.",
+    "image": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1200&auto=format&fit=crop",
+    "imageAlt": "Boutique hotel lobby with warm lighting"
+  },
+  {
+    "id": "h5",
+    "name": "Sunset Dunes Retreat",
+    "city": "Phoenix",
+    "rating": 4.3,
+    "pricePerNight": 169,
+    "amenities": ["Pool", "Wi‑Fi", "Spa", "Parking"],
+    "description": "Desert-inspired retreat featuring a sunlit pool and spa services.",
+    "image": "https://images.unsplash.com/photo-1501117716987-c8e1ecb2101f?q=80&w=1200&auto=format&fit=crop",
+    "imageAlt": "Resort pool in a desert setting at sunset"
+  },
+  {
+    "id": "h6",
+    "name": "Maple & Stone Lodge",
+    "city": "Denver",
+    "rating": 4.6,
+    "pricePerNight": 178,
+    "amenities": ["Wi‑Fi", "Fireplace", "Breakfast", "Parking", "Ski Storage"],
+    "description": "Mountain lodge charm with fireplaces and access to outdoor adventures.",
+    "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1200&auto=format&fit=crop",
+    "imageAlt": "Cozy lodge with wooden interiors"
   }
 ]

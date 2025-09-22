@@ -52,7 +52,7 @@ function App() {
         onNavigate={(t) => (t === 'home' ? goHome() : goBookings())}
       />
 
-      <main className="container page">
+      <main className="container page" role="main" aria-live="polite">
         {view === 'home' && (
           <>
             <h1 className="page-title">Find your next stay</h1>
