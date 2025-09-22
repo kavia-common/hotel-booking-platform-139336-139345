@@ -466,6 +466,21 @@ a:hover { text-decoration: underline; }
 }
 
 /* Empty state */
+.empty_state_legacy {}
 .empty-state {
   background: linear-gradient(135deg, rgba(37,99,235,0.06), rgba(255,255,255,1));
+}
+
+/* Quote helper (for testimonials) */
+.quote {
+  position: relative;
+  padding-left: 18px;
+}
+.quote:before {
+  content: "“";
+  position: absolute;
+  left: 0;
+  top: -2px;
+  color: var(--color-primary);
+  font-weight: 800;
 }

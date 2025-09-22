@@ -231,6 +231,122 @@ function App() {
               </div>
             </section>
 
+            {/* Tips & Testimonials section (Ocean Professional) */}
+            <section
+              className="card"
+              style={{
+                borderRadius: '16px',
+                boxShadow: 'var(--shadow-md)',
+                border: '1px solid var(--color-border)',
+                marginBottom: 18,
+                padding: 16,
+                background: 'linear-gradient(135deg, rgba(37,99,235,0.06), rgba(255,255,255,1))'
+              }}
+              aria-label="Booking tips and testimonials"
+            >
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12, flexWrap: 'wrap' }}>
+                <div style={{ minWidth: 200 }}>
+                  <div className="helper">Helpful insights</div>
+                  <h2 className="page-title" style={{ marginTop: 2, marginBottom: 8 }}>Booking tips & testimonials</h2>
+                  <div className="page-subtitle" style={{ marginBottom: 8 }}>
+                    Make the most of your stay with quick tips from us and kind words from travelers.
+                  </div>
+                </div>
+                <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
+                  <a href="#hotel-list" className="btn btn-ghost" onClick={(e) => { e.preventDefault(); document.getElementById('hotel-list')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }}>
+                    Browse Hotels
+                  </a>
+                </div>
+              </div>
+
+              <div
+                style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
+                  gap: 12,
+                  marginTop: 8
+                }}
+              >
+                {/* Tips */}
+                <article className="card" style={{ padding: 14, borderRadius: 12 }}>
+                  <div className="badge" aria-hidden="true">💡 Tip</div>
+                  <h3 style={{ margin: '8px 0 6px', fontSize: 16, fontWeight: 800 }}>Book in advance</h3>
+                  <p className="helper" style={{ margin: 0 }}>
+                    Book in advance for best rates! Prices tend to rise closer to popular dates.
+                  </p>
+                </article>
+
+                <article className="card" style={{ padding: 14, borderRadius: 12 }}>
+                  <div className="badge" aria-hidden="true">💡 Tip</div>
+                  <h3 style={{ margin: '8px 0 6px', fontSize: 16, fontWeight: 800 }}>Use filters smartly</h3>
+                  <p className="helper" style={{ margin: 0 }}>
+                    Combine rating and amenities to quickly find the perfect match for your trip.
+                  </p>
+                </article>
+
+                <article className="card" style={{ padding: 14, borderRadius: 12 }}>
+                  <div className="badge" aria-hidden="true">💡 Tip</div>
+                  <h3 style={{ margin: '8px 0 6px', fontSize: 16, fontWeight: 800 }}>Compare by location</h3>
+                  <p className="helper" style={{ margin: 0 }}>
+                    Search by city to explore neighborhoods and minimize travel time.
+                  </p>
+                </article>
+
+                {/* Testimonials */}
+                <article
+                  className="card"
+                  style={{
+                    padding: 14,
+                    borderRadius: 12,
+                    background: 'linear-gradient(180deg, rgba(37,99,235,0.04), rgba(255,255,255,1))',
+                    borderColor: 'rgba(37,99,235,0.25)'
+                  }}
+                >
+                  <figure style={{ margin: 0 }}>
+                    <blockquote
+                      style={{
+                        margin: 0,
+                        fontSize: 15,
+                        color: '#111827',
+                        lineHeight: 1.6
+                      }}
+                    >
+                      “This platform made booking a breeze — from filters to checkout, everything was smooth.”
+                    </blockquote>
+                    <figcaption className="helper" style={{ marginTop: 8 }}>
+                      — Anna N.
+                    </figcaption>
+                  </figure>
+                </article>
+
+                <article
+                  className="card"
+                  style={{
+                    padding: 14,
+                    borderRadius: 12,
+                    background: 'linear-gradient(180deg, rgba(245,158,11,0.08), rgba(255,255,255,1))',
+                    borderColor: 'rgba(245,158,11,0.35)'
+                  }}
+                >
+                  <figure style={{ margin: 0 }}>
+                    <blockquote
+                      style={{
+                        margin: 0,
+                        fontSize: 15,
+                        color: '#111827',
+                        lineHeight: 1.6
+                      }}
+                    >
+                      “I loved how fast it is. My picks stayed saved locally even after a reload!”
+                    </blockquote>
+                    <figcaption className="helper" style={{ marginTop: 8 }}>
+                      — Marco R.
+                    </figcaption>
+                  </figure>
+                </article>
+              </div>
+            </section>
+
             <div className="layout-grid">
               <FilterBar
                 hotels={hotels}
