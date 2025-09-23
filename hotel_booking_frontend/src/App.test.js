@@ -7,8 +7,8 @@ test('renders header brand', () => {
   expect(brandElement).toBeInTheDocument();
 });
 
-test('renders home page title', () => {
+test('renders home page hero CTA', () => {
   render(<App />);
-  const title = screen.getByText(/Find your next stay/i);
-  expect(title).toBeInTheDocument();
+  const cta = screen.getByText(/Start Booking Now/i);
+  expect(cta).toBeInTheDocument();
 });
